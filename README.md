@@ -1,0 +1,1 @@
+# terraform-config-sample
