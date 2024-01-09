@@ -1,0 +1,28 @@
+---
+- name: App1
+  region: Region1
+  team: TeamA
+  cloud: aws
+  param1: 42
+  param2: "value1"
+
+- name: App2
+  region: Region2
+  team: TeamB
+  cloud: gcp
+  param1: 56
+  param2: "value2"
+
+- name: App3
+  region: Region3
+  team: TeamC
+  cloud: azure
+  param1: 78
+  param2: "value3"
+
+- name: App4
+  region: Region4
+  team: TeamA
+  cloud: aws
+  param1: 91
+  param2: "value4"
