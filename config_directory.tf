@@ -12,6 +12,7 @@ locals {
       }
       if length([for app in local.config_dir_app_files: app if startswith(app, "${cloud}/${region}/${team}")]) != 0
     }
+      if length([for app in local.config_dir_app_files: app if startswith(app, "${cloud}/${region}")]) != 0
     }
   }
 }
