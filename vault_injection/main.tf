@@ -38,15 +38,15 @@ locals {
 }
 
 module "app_config" {
-    source = "./modules/app_config"
+  source = "./modules/app_config"
 
-    for_each = local.apps
-    app_name = each.key
+  for_each = local.apps
+  app_name = each.key
 
-    color = each.value.color
-    sound = each.value.sound
-    language = each.value.language
+  color    = each.value.color
+  sound    = each.value.sound
+  language = each.value.language
 
-    app_password = each.value.secret_config.secret_value
-  
+  app_password = each.value.secret_config.secret_value
+
 }

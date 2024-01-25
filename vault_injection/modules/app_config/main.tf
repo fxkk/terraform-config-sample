@@ -1,30 +1,30 @@
 terraform {
   required_providers {
     local = {
-      source = "hashicorp/local"
+      source  = "hashicorp/local"
       version = "2.4.1"
     }
   }
 }
 
 variable "app_name" {
-    type = string
+  type = string
 }
 
 variable "color" {
-    type = string
+  type = string
 }
 
 variable "sound" {
-    type = string
+  type = string
 }
 
 variable "language" {
-    type = string
+  type = string
 }
 
 variable "app_password" {
-    type = string
+  type = string
 }
 
 resource "local_file" "foo" {
